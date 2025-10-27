@@ -1,0 +1,79 @@
+Okay, let's reset and look at the updated blueprint. We'll incorporate the ideas for deeper analysis to make this project stand out.
+
+## 📝 Revised Project Blueprint: KSA Brand Licensing Analysis
+
+**Goal:** Build a tool/model to analyze brand hype (**volume & sentiment**), market presence, perceived quality, and potential risks (like counterfeits) in the KSA market to inform licensing decisions.
+
+---
+
+**Phase 1: Data Collection** ⚙️
+* `DONE` ✅ Scrape Twitter (X) data for target brands using Apify (`1_scrape_hype.py`). (Note: Dates failed, engagement counts missing).
+* `SKIPPED` ❌ Scrape Google Trends data.
+* `DONE` ✅ Scrape Amazon.sa product *listings* using Apify (`2_scrape_ecommerce_apify.py` v11). (Note: Only Amazon data, Noon failed).
+* `PENDING` ⏳ **(New Task)** Scrape Amazon.sa product *reviews* for a sample of identified products (requires a new scraper script, e.g., `3_scrape_reviews_apify.py`).
+* `DONE` ✅ Store all collected raw data in SQLite DB (`licensing_data.db`).
+
+---
+
+**Phase 2: Data Cleaning & Basic Feature Engineering** 🧹
+* `DONE` ✅ Load data into Pandas DataFrames (`df_tweets`, `df_products`).
+* `DONE` ✅ Clean data types, handle missing product values (fill 0 for ratings/reviews). (Note: Tweet dates remain `NaT`).
+* `DONE` ✅ Engineer basic features:
+    * Tweet Volume (as basic Hype proxy).
+    * Market Saturation (Amazon product count).
+    * Average Perceived Quality (Avg Amazon Rating).
+    * Average Number of Reviews (Amazon avg review count).
+* `DONE` ✅ Combine basic metrics (`df_combined_metrics`).
+
+---
+
+**Phase 3: Advanced EDA & Feature Engineering** ✨
+* `PENDING` ⏳ **(Next Step)** Perform **Sentiment Analysis** on `tweet_content` (using VADER/TextBlob + potentially Arabic tools). Add `avg_tweet_sentiment` metric.
+* `PENDING` ⏳ Perform **Topic Modeling** (e.g., LDA) on `tweet_content` to identify key themes ("Brand DNA").
+* `PENDING` ⏳ **(Requires Phase 1 Review Scrape)** Load scraped Amazon reviews into `df_reviews`.
+* `PENDING` ⏳ **(Requires Phase 1 Review Scrape)** Calculate **Counterfeit Risk Score** from review text. Add `counterfeit_risk` metric.
+* `PENDING` ⏳ **(Requires Phase 1 Review Scrape)** Perform **Sentiment Analysis** on review text. Add `avg_review_sentiment` metric.
+
+---
+
+**Phase 4: Visualization & Insights** 📊
+* `DONE` ✅ Create initial plots for Volume, Saturation, Hype vs. Saturation.
+* `PENDING` ⏳ Update/Create visualizations incorporating Sentiment, Topics, Counterfeit Risk. Refine the "Opportunity Matrix".
+
+---
+
+**Phase 5: Final Model/App & Interpretation** 🚀
+* `PENDING` ⏳ Define final **"Brand Suitability Score"** based on weighted metrics.
+* `PENDING` ⏳ Build the `consultant_tool.py` script (loads final metrics, takes brand input, prints summary report).
+* `PENDING` ⏳ Document findings & actionable insights.
+
+---
+
+**Okay, let's continue with the pipeline.** The next logical step, using the data we *already have*, is **Phase 3a: Sentiment Analysis on Tweets**.
+
+Ready to add the code for that in the next notebook cell? We'll install a library and analyze the tweet text.
+
+
+
+Suitability Score = (NormHype * 0.40) + (NormQuality * 0.30) + (NormPopularity * 0.20) + (NormSaturation * 0.10)
+
+amazon reviews scraping as well- we need Counterfeit Risk.
+we also need to get Sentiment as well 
+
+Sentiment Analysis: Using the actual full_text.
+(Optional but Recommended) Topic Modeling: Also using full_text.
+Scraping Amazon Reviews: Writing the new script to get review text.
+Counterfeit Risk Score: Analyzing that review text.
+
+Verify database data before continuing to next step
+
+Create new EDA file v2 for this expansion
+
+We'll use a common technique called Latent Dirichlet Allocation (LDA). This will help us understand what people are actually talking about when they mention a brand (e.g., "products," "customer service," "events," "news," specific people like "Ronaldo").
+
+
+Scrape Amazon Reviews: We'll then write the 3_scrape_reviews_apify.py script to get the review text.
+
+Counterfeit Risk & Review Sentiment: Once we have the reviews, we'll analyze them in the notebook to calculate the risk score and review sentiment.
+
+Refine Model & Build GUI: Finally, we'll incorporate all these richer metrics into our Suitability Score and the consultant_tool.py.

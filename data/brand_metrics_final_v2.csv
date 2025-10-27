@@ -1,0 +1,81 @@
+brand_name,tweet_volume,market_saturation,avg_perceived_quality,avg_num_reviews,avg_tweet_sentiment
+"
+    # Copied from the log where errors started
+    ""Al-Nassr"": ""Al Nassr OR النصر"",
+    ""Al-Ittihad"": ""Al Ittihad OR الاتحاد"",
+    ""Al-Ahli"": ""Al Ahli OR الاهلي"",
+    ""Fanatics"": ""Fanatics saudi"",
+    ""KSA Anime"": ""anime saudi OR انمي السعودية"",
+    ""KSA One Piece"": ""one piece saudi OR ون بيس السعودية"",
+    ""Fitness Time"": ""Fitness Time saudi OR وقت اللياقة"",
+    ""Body Masters"": ""Body Masters saudi OR بودي ماسترز"",
+    ""PureGym KSA"": ""PureGym saudi OR بيورجيم"",
+    ""Jarir Bookstore"": ""Jarir Bookstore saudi OR جرير"",
+    ""SACO"": ""SACO saudi OR ساكو"",
+    ""eXtra"": ""eXtra saudi OR اكسترا"",
+    ""Mall of Arabia"": ""Mall of Arabia saudi OR مول العرب"",
+    ""Riyadh Park Mall"": ""Riyadh Park saudi OR رياض بارك"",
+    ""Red Sea Mall"": ""Red Sea Mall saudi OR رد سي مول"",
+    ""Al Nakheel Mall"": ""Al Nakheel Mall saudi OR النخيل مول"",
+    ""Kingdom Centre"": ""Kingdom Centre saudi OR برج المملكة"",
+    ""Al Romansiah"": ""Al Romansiah saudi OR مطعم الرومانسية"",
+    ""Mama Noura"": ""Mama Noura saudi OR ماما نورة""
+    Sleysla",144,0,0.0,0.0,0.299
+1886,0,25,3.58,254.12,0.0
+APOA,5,2,0.0,0.0,0.36
+Abadia,38,25,2.1,4.56,0.392
+Abdul Samad Al Qurashi,44,25,1.57,4.72,0.0
+Al Nakheel Mall,167,0,0.0,0.0,0.02
+Al Rabie,293,25,2.96,49.16,0.124
+Al Romansiah,7,25,4.55,11.84,0.0
+Al-Ahli,980,0,0.0,0.0,0.086
+Al-Hilal,311,25,1.33,2.28,0.26
+Al-Ittihad,945,24,0.77,0.33,0.12
+Al-Nassr,907,24,1.43,4.5,0.16
+Al-Othaim Markets,507,1,0.0,0.0,0.004
+Almarai,1021,25,4.62,285.8,0.107
+Almunajem Foods,24,24,4.1,1065.54,0.27
+Arabian Oud,510,25,3.96,654.36,0.012
+Bayara,20,0,0.0,0.0,0.072
+BinDawood,394,4,3.6,799.5,0.007
+Body Masters,284,25,2.12,438.28,0.015
+Bostani Chocolates,0,24,3.81,369.04,0.0
+Camel Step,10,25,3.7,15.52,0.0
+Charmaleena,20,0,0.0,0.0,0.373
+DHAD,582,7,1.27,9.43,0.018
+DalyDress,0,25,1.4,0.36,0.0
+Dania Shinkar,2,0,0.0,0.0,0.0
+Fanatics,509,25,2.91,763.6,-0.001
+Fitness Time,603,25,2.72,355.88,0.22
+Goody,825,25,4.32,183.72,0.063
+Hasawi,154,3,1.53,390.0,0.106
+Herfy,947,25,2.72,1.32,0.087
+Hindamme,69,0,0.0,0.0,0.237
+Homegrown Market,0,25,3.42,36.48,0.0
+Jarir Bookstore,805,25,4.17,174.68,0.121
+KSA Anime,113,25,0.2,0.04,0.01
+KSA One Piece,45,25,2.45,67.04,0.0
+Kingdom Centre,0,25,1.0,12.12,0.0
+Kudu,1013,25,1.25,72.12,0.064
+Lazurde,156,25,3.65,362.96,0.122
+Leem,0,25,0.4,0.08,0.0
+Mall of Arabia,205,9,3.43,1.22,0.022
+Mama Noura,2,1,5.0,2.0,0.0
+Mikyajy,50,25,2.86,2846.64,0.256
+NADEC,564,25,4.39,233.28,0.139
+Nada Dairy,89,25,2.75,18.08,0.062
+Nahdi,33,22,0.68,0.5,0.0
+Panda,3,25,4.17,404.48,0.0
+PureGym KSA,78,15,1.07,0.27,0.089
+Qormuz,285,0,0.0,0.0,0.025
+Rani,1,25,3.51,17.56,0.0
+Razan Alazzouni,17,0,0.0,0.0,0.0
+Red Sea Mall,595,25,3.14,246.64,0.039
+Riyadh Park Mall,30,1,0.0,0.0,0.036
+SACO,1030,25,2.16,128.4,0.083
+Saudia Dairy (SADAFCO),513,19,3.89,120.53,0.142
+Sunbulah Group,360,0,0.0,0.0,0.119
+Tamr,31,17,2.08,1.82,0.372
+The Dropped Collection,19,25,1.27,15.2,0.266
+Torba Studio,1,25,3.33,123.72,0.0
+eXtra,1026,23,4.45,298.65,0.078

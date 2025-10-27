@@ -1,0 +1,15 @@
+# Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Database file (keep the CSV, but ignore the raw DB)
+*.db
+
+# OS-specific files
+.DS_Store
